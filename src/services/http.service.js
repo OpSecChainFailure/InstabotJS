@@ -120,7 +120,7 @@ class HttpService {
         /*let yes = true;*/
         const formdata = this.getFormData({
             username: credentials.username,
-            password: credentials.password
+            enc_password: '#PWD_INSTAGRAM_BROWSER:0:{time}:' + credentials.password,
         });
         let options = {
             method: 'POST',
